@@ -1,0 +1,323 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-18T10:54:37.379259+00:00",
+  "title": "Design System: 家居控制",
+  "extensions": {
+    "colorMeta": {
+      "accent": {
+        "role": "primary",
+        "displayName": "系统强调色",
+        "nativeSource": "SwiftUI Color.accentColor",
+        "tonalRamp": [
+          "oklch(15% 0.1 250)",
+          "oklch(26% 0.1 250)",
+          "oklch(38% 0.1 250)",
+          "oklch(49% 0.1 250)",
+          "oklch(61% 0.1 250)",
+          "oklch(72% 0.1 250)",
+          "oklch(84% 0.1 250)",
+          "oklch(95% 0.1 250)"
+        ],
+        "tonalRampPurpose": "截图蓝色的展示用合成色阶；非固定品牌色，非系统颜色实测。",
+        "appearanceReference": {
+          "light": "截图显示系统蓝色；真实值随系统强调色设置解析。",
+          "dark": "由系统动态解析，未从暗色截图采样。"
+        }
+      },
+      "canvas": {
+        "role": "neutral",
+        "displayName": "窗口底面",
+        "nativeSource": "NSColor.windowBackgroundColor",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(26% 0 0)",
+          "oklch(38% 0 0)",
+          "oklch(49% 0 0)",
+          "oklch(61% 0 0)",
+          "oklch(72% 0 0)",
+          "oklch(84% 0 0)",
+          "oklch(95% 0 0)"
+        ],
+        "tonalRampPurpose": "面板展示用合成中性明度示意，不是原生 token 或系统颜色实测。",
+        "appearanceReference": {
+          "light": "原生颜色在 aqua 下解析。",
+          "dark": "原生颜色在 darkAqua 下解析。"
+        }
+      },
+      "tile": {
+        "role": "neutral",
+        "displayName": "控件表面",
+        "nativeSource": "NSColor.controlBackgroundColor",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(26% 0 0)",
+          "oklch(38% 0 0)",
+          "oklch(49% 0 0)",
+          "oklch(61% 0 0)",
+          "oklch(72% 0 0)",
+          "oklch(84% 0 0)",
+          "oklch(95% 0 0)"
+        ],
+        "tonalRampPurpose": "面板展示用合成中性明度示意，不是原生 token 或系统颜色实测。",
+        "appearanceReference": {
+          "light": "原生颜色在 aqua 下解析。",
+          "dark": "原生颜色在 darkAqua 下解析。"
+        }
+      },
+      "primary-text": {
+        "role": "neutral",
+        "displayName": "主要文字",
+        "nativeSource": "SwiftUI Color.primary",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(26% 0 0)",
+          "oklch(38% 0 0)",
+          "oklch(49% 0 0)",
+          "oklch(61% 0 0)",
+          "oklch(72% 0 0)",
+          "oklch(84% 0 0)",
+          "oklch(95% 0 0)"
+        ],
+        "tonalRampPurpose": "面板展示用合成中性明度示意，不是原生 token 或系统颜色实测。",
+        "appearanceReference": {
+          "light": "原生颜色在 aqua 下解析。",
+          "dark": "原生颜色在 darkAqua 下解析。"
+        }
+      },
+      "secondary-text": {
+        "role": "neutral",
+        "displayName": "可读辅助文字",
+        "nativeSource": "PanelStyle.secondaryText: NSColor(calibratedWhite: isDark ? 0.72 : 0.36, alpha: 1)",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(26% 0 0)",
+          "oklch(38% 0 0)",
+          "oklch(49% 0 0)",
+          "oklch(61% 0 0)",
+          "oklch(72% 0 0)",
+          "oklch(84% 0 0)",
+          "oklch(95% 0 0)"
+        ],
+        "tonalRampPurpose": "面板展示用合成中性明度示意，不是原生 token 或系统颜色实测。",
+        "appearanceReference": {
+          "light": "calibratedWhite 0.36, alpha 1",
+          "dark": "calibratedWhite 0.72, alpha 1",
+          "note": "CSS百分比灰色是跨色彩空间表达近似；NSColor calibratedWhite 为原生真值。"
+        }
+      },
+      "on-accent": {
+        "role": "neutral",
+        "displayName": "强调色上的白色",
+        "nativeSource": "SwiftUI Color.white",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(26% 0 0)",
+          "oklch(38% 0 0)",
+          "oklch(49% 0 0)",
+          "oklch(61% 0 0)",
+          "oklch(72% 0 0)",
+          "oklch(84% 0 0)",
+          "oklch(95% 0 0)"
+        ],
+        "tonalRampPurpose": "面板展示用合成中性明度示意，不是原生 token 或系统颜色实测。",
+        "appearanceReference": {
+          "light": "原生颜色在 aqua 下解析。",
+          "dark": "原生颜色在 darkAqua 下解析。"
+        }
+      }
+    },
+    "typographyMeta": {
+      "temperature": {
+        "displayName": "详情目标温度",
+        "purpose": "SwiftUI 系统圆体 semibold；monospacedDigit。"
+      },
+      "tile-temperature": {
+        "displayName": "卡片短读数",
+        "purpose": "温度、百分比等短读数；SwiftUI 系统圆体 semibold，monospacedDigit。"
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "detail-transition",
+        "value": "easeOut(duration: 0.18); opacity + offset(x: 12pt)",
+        "purpose": "详情导航；accessibilityReduceMotion 时 animation=nil 且 offset=0。"
+      },
+      {
+        "name": "more-disclosure",
+        "value": "easeOut(duration: 0.18); chevron rotation 0deg → 180deg",
+        "purpose": "温控更多操作展开；减少动态效果时不动画。通用「更多功能与设置」没有额外动画。"
+      }
+    ],
+    "breakpoints": [],
+    "nativeGeometry": {
+      "sourceUnit": "SwiftUI logical point",
+      "panelHeight": "min(644, (NSScreen.main?.visibleFrame.height ?? 900) - 80)",
+      "headerHeight": 66,
+      "footerHeight": 40,
+      "choiceMinimumWidth": 76,
+      "choiceMinimumHeight": 35,
+      "categoryShape": "Capsule",
+      "powerShape": "Circle"
+    },
+    "nativeStateStyles": {
+      "tileBorder": "Color.primary.opacity(0.06), lineWidth 1",
+      "tileHoverBorder": "PanelStyle.accent.opacity(0.65), lineWidth 1",
+      "categoryIdle": "Color.primary.opacity(0.045)",
+      "choiceIdle": "Color.primary.opacity(0.055)",
+      "powerIdle": "Color.primary.opacity(0.08)",
+      "notice": "Color.orange.opacity(0.09)",
+      "offlineTemperatureOpacity": 0.5,
+      "statusColors": "SwiftUI Color.orange / .green / .red; native semantic use",
+      "focus": "SwiftUI/AppKit native focus and disabled rendering"
+    },
+    "previewPolicy": {
+      "sourceOfTruth": [
+        "Sources/AirControl/ControlPanel.swift",
+        "Sources/AirControl/HomeDeviceControlView.swift",
+        "Sources/AirControl/HomeDevice.swift",
+        "Sources/AirControl/DeviceControlView.swift",
+        "Sources/AirControl/DevicePresentation.swift",
+        "Sources/AirControl/AirControlApp.swift"
+      ],
+      "screenshots": [
+        ".impeccable/review/home-devices/overview.png",
+        ".impeccable/review/home-devices/fan.png",
+        ".impeccable/review/home-devices/more.png",
+        ".impeccable/review/home-devices/sensor.png",
+        ".impeccable/review/home-devices/events.png",
+        ".impeccable/review/home-devices/light.png",
+        ".impeccable/review/home-devices/fridge.png",
+        ".impeccable/review/home-devices/humidity.png",
+        ".impeccable/review/home-devices/media.png",
+        ".impeccable/review/home-devices/camera.png"
+      ],
+      "rendering": "HTML/CSS is a standalone approximation of native SwiftUI. CSS system colors bridge semantic roles, not exact AppKit pixels. Browser focus and hover feedback in previews are illustrative, except the evidenced device-card hover border. Input and prominent button browser dimensions are illustrative; native control metrics remain OS-owned. SVG paths are preview substitutes for SF Symbols, not shipping assets. No web runtime is used by the app.",
+      "units": "Preview 1 CSS px approximates 1 native logical point; DESIGN.md pt denotes SwiftUI logical points."
+    }
+  },
+  "components": [
+    {
+      "name": "设备卡片",
+      "kind": "card",
+      "description": "卡片主体进入聚合设备详情；支持明确电源能力时，右下角提供独立的 30 点快捷电源，留出文字空间。无状态反馈设备打开开机／关机菜单。原生 SwiftUI 来源；HTML/CSS 为独立近似预览。",
+      "html": "<div class=\"ds-tile\"><button class=\"ds-tile-detail\" aria-label=\"打开小凌控制\"><span class=\"ds-tile-top\"><span aria-hidden=\"true\">27°</span></span><strong>小凌</strong><span class=\"ds-tile-status\">制冷 · 客厅</span></button><button class=\"ds-tile-power\" aria-label=\"关闭小凌\"><svg width=\"13\" height=\"13\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" aria-hidden=\"true\"><path d=\"M12 2v10M5 5a9 9 0 1 0 14 0\"/></svg></button></div>",
+      "css": ".ds-tile{font-family:system-ui;color:CanvasText;background:Field;border:1px solid color-mix(in srgb,CanvasText 6%,transparent);border-radius:16px;width:185px;height:88px;position:relative}.ds-tile-detail{box-sizing:border-box;color:inherit;background:transparent;border:0;border-radius:16px;padding:13px;width:100%;height:100%;text-align:left;display:flex;flex-direction:column;gap:3px;font:inherit;font-size:13px;cursor:pointer}.ds-tile-detail>strong,.ds-tile-status{padding-right:34px}.ds-tile-top{display:flex;justify-content:flex-end;margin-bottom:5px;font-size:16px;font-variant-numeric:tabular-nums}.ds-tile-status{font-size:10.5px;color:light-dark(rgb(36% 36% 36%),rgb(72% 72% 72%))}.ds-tile-power{position:absolute;right:10px;bottom:10px;width:30px;height:30px;border:0;border-radius:50%;background:AccentColor;color:white;display:grid;place-items:center;cursor:pointer}.ds-tile:hover{border-color:AccentColor}.ds-tile button:focus-visible{outline:2px solid AccentColor;outline-offset:2px}",
+      "refersTo": "device-tile"
+    },
+    {
+      "name": "开启状态开关",
+      "kind": "button",
+      "description": "独立设备开关。 原生 SwiftUI 来源；HTML/CSS 为独立近似预览。",
+      "html": "<button class=\"ds-power\" aria-label=\"关闭设备\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" aria-hidden=\"true\"><path d=\"M12 2v10M5 5a9 9 0 1 0 14 0\"/></svg></button>",
+      "css": ".ds-power{background:AccentColor;color:white;border:0;border-radius:50%;width:48px;height:48px;display:grid;place-items:center;cursor:pointer}.ds-power:hover{filter:brightness(.98)}.ds-power:focus-visible{outline:2px solid AccentColor;outline-offset:3px;}.ds-power:active{opacity:.8}.ds-power:disabled{opacity:.5;cursor:default}",
+      "refersTo": "power-active"
+    },
+    {
+      "name": "温度步进",
+      "kind": "custom",
+      "description": "加减按钮与等宽数字读数。 原生 SwiftUI 来源；HTML/CSS 为独立近似预览。",
+      "html": "<div class=\"ds-temp\"><button aria-label=\"降低温度\">−</button><div><strong>27</strong><span> °C</span><small>目标温度</small></div><button aria-label=\"升高温度\">+</button></div>",
+      "css": ".ds-temp{font-family:system-ui;color:CanvasText;display:flex;align-items:center;justify-content:space-between;background:Field;border-radius:16px;padding:20px 14px;width:348px}.ds-temp>div{text-align:center}.ds-temp strong{font-family:ui-rounded,system-ui;font-size:42px;font-weight:600;font-variant-numeric:tabular-nums}.ds-temp span{font-size:16px}.ds-temp small{display:block;font-size:11px;color:GrayText}.ds-temp button{width:44px;height:48px;background:transparent;color:CanvasText;border:0;font-size:24px;cursor:pointer}.ds-temp button:hover{opacity:.8}.ds-temp button:focus-visible{outline:2px solid AccentColor;outline-offset:3px;}.ds-temp button:active{opacity:.6}.ds-temp button:disabled{opacity:.4}",
+      "refersTo": "temperature-panel"
+    },
+    {
+      "name": "已选模式",
+      "kind": "button",
+      "description": "能力选项的实色选中态。 原生 SwiftUI 来源；HTML/CSS 为独立近似预览。",
+      "html": "<button class=\"ds-choice\" aria-pressed=\"true\">制冷</button>",
+      "css": ".ds-choice{font-family:system-ui;color:CanvasText;font-size:12px;font-weight:600;background:AccentColor;color:white;border:0;border-radius:9px;padding:0 6px;min-width:76px;min-height:35px;cursor:pointer}.ds-choice:hover{filter:brightness(.98)}.ds-choice:focus-visible{outline:2px solid AccentColor;outline-offset:3px;}.ds-choice:active{opacity:.8}.ds-choice:disabled{opacity:.5}",
+      "refersTo": "choice-selected"
+    },
+    {
+      "name": "类别筛选",
+      "kind": "chip",
+      "description": "总览类别胶囊，当前为全部。 原生 SwiftUI 来源；HTML/CSS 为独立近似预览。",
+      "html": "<button class=\"ds-category\" aria-pressed=\"true\">全部</button>",
+      "css": ".ds-category{font-family:system-ui;color:CanvasText;font-size:12px;font-weight:600;background:CanvasText;color:Canvas;border:0;border-radius:100px;padding:0 13px;height:29px;cursor:pointer}.ds-category:hover{opacity:.9}.ds-category:focus-visible{outline:2px solid AccentColor;outline-offset:3px;}.ds-category:active{opacity:.8}",
+      "refersTo": "category-selected"
+    },
+    {
+      "name": "返回全部设备",
+      "kind": "nav",
+      "description": "返回图标具备明确的可访问性标签。 原生 SwiftUI 来源；HTML/CSS 为独立近似预览。",
+      "html": "<button class=\"ds-back\" aria-label=\"返回全部设备\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 16 16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" aria-hidden=\"true\"><path d=\"m10 3-5 5 5 5\"/></svg></button>",
+      "css": ".ds-back{font-family:system-ui;color:CanvasText;display:grid;place-items:center;width:30px;height:32px;border:0;background:transparent;cursor:pointer}.ds-back:hover{opacity:.8}.ds-back:focus-visible{outline:2px solid AccentColor;outline-offset:3px;}.ds-back:active{opacity:.6}",
+      "refersTo": "navigation-button"
+    },
+    {
+      "name": "服务器地址输入",
+      "kind": "input",
+      "description": "原生 roundedBorder 文本框，具体系统度量未固定。 原生 SwiftUI 来源；HTML/CSS 为独立近似预览。",
+      "html": "<label class=\"ds-field\">服务器地址<input aria-label=\"Home Assistant 服务器地址\" placeholder=\"http://homeassistant.local:8123\"></label>",
+      "css": ".ds-field{font-family:system-ui;color:CanvasText;display:grid;gap:7px;font-size:13px;width:300px}.ds-field input{font:inherit;color:FieldText;background:Field;border:1px solid GrayText;border-radius:5px;padding:5px 7px}.ds-field input:hover{border-color:CanvasText}.ds-field input:focus-visible{outline:2px solid AccentColor;outline-offset:3px;}"
+    },
+    {
+      "name": "连接并发现设备",
+      "kind": "button",
+      "description": "原生 borderedProminent large 按钮。 原生 SwiftUI 来源；HTML/CSS 为独立近似预览。",
+      "html": "<button class=\"ds-connect\">连接并发现设备</button>",
+      "css": ".ds-connect{font-family:system-ui;font-size:13px;background:AccentColor;color:AccentColorText;border:0;border-radius:6px;padding:8px 16px;width:300px;cursor:pointer}.ds-connect:hover{filter:brightness(.98)}.ds-connect:focus-visible{outline:2px solid AccentColor;outline-offset:3px;}.ds-connect:active{opacity:.8}.ds-connect:disabled{opacity:.5;cursor:default}"
+    },
+    {
+      "name": "设备与房间搜索",
+      "kind": "input",
+      "description": "中性控件底面的总览搜索；清除后与类别筛选共同决定结果。HTML/CSS 为原生组件近似预览。",
+      "html": "<label class=\"ds-search\"><svg width=\"13\" height=\"13\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" aria-hidden=\"true\"><circle cx=\"10\" cy=\"10\" r=\"6\"/><path d=\"m15 15 6 6\"/></svg><input aria-label=\"搜索设备或房间\" placeholder=\"搜索设备或房间\"></label>",
+      "css": ".ds-search{font-family:system-ui;display:flex;align-items:center;gap:7px;background:Field;color:GrayText;padding:0 10px;height:30px;border-radius:8px;width:360px;font-size:12px}.ds-search input{font:inherit;color:FieldText;flex:1;min-width:0;border:0;background:transparent;outline:none}.ds-search:focus-within{outline:2px solid AccentColor;outline-offset:2px}.ds-search:hover{filter:brightness(.99)}"
+    },
+    {
+      "name": "数值与边界",
+      "kind": "custom",
+      "description": "标题与右侧圆体等宽读数、原生滑块及范围；拖动结束提交，缺失状态改用输入与设置。HTML/CSS 为近似预览。",
+      "html": "<div class=\"ds-value\"><label for=\"ds-value-slider\">目标湿度<strong>50%</strong></label><input id=\"ds-value-slider\" type=\"range\" min=\"30\" max=\"70\" value=\"50\"><div class=\"ds-value-range\"><span>30%</span><span>70%</span></div></div>",
+      "css": ".ds-value{font-family:system-ui;color:CanvasText;width:360px;display:grid;gap:10px;font-size:12px}.ds-value label{display:flex;justify-content:space-between;font-weight:500}.ds-value strong{font-family:ui-rounded,system-ui;font-size:13px;font-weight:600;font-variant-numeric:tabular-nums}.ds-value input{width:100%;margin:0;accent-color:AccentColor}.ds-value input:hover{filter:brightness(.98)}.ds-value input:focus-visible{outline:2px solid AccentColor;outline-offset:3px}.ds-value input:disabled{opacity:.5}.ds-value-range{display:flex;justify-content:space-between;color:GrayText;font-size:10px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "原生家居控制中心",
+    "overview": "以已确认的「原生家居控制中心」为方向：中性圆角设备块、清楚的状态文字、独立开关与横向温度步进。用户先浏览设备，再打开详情；密度适合菜单栏短时操作。\n\n采用 SwiftUI 与 AppKit、系统字体和 SF Symbols，跟随 macOS 明暗外观及强调色。系统字体是明确的原生平台约束。无外部字体、装饰图片或网页容器；HTML/CSS 仅用于设计面板的近似组件预览。",
+    "keyCharacteristics": [
+      "原生动态外观与系统文字。",
+      "两列设备宫格，详情内逐层展开控制。",
+      "状态同时使用文字、图标与颜色。",
+      "控制能力、温度单位及范围来自实际实体。"
+    ],
+    "rules": [
+      {
+        "name": "状态有文字",
+        "body": "开启、关闭、离线与选中状态必须同时有文字或可访问性语义；颜色不能独自承担状态。",
+        "section": "colors"
+      },
+      {
+        "name": "读数先于装饰",
+        "body": "温度使用系统圆体与等宽数字，单位缩小；不添加脱离设备能力的读数或操作。",
+        "section": "typography"
+      },
+      {
+        "name": "原生平面层次",
+        "body": "内容表面依靠动态底色、留白和细描边分层，不添加自定义卡片投影。",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do 保留系统字体、SF Symbols、动态明暗色与系统强调色。",
+      "Do 用设备宫格进入详情，并提供「返回全部设备」；长内容在固定头尾之间滚动。",
+      "Do 只呈现实体报告的能力、单位和范围；冰箱写「当前」，热水设备写「水温」。",
+      "Do 保留网络操作禁用、状态未提供、离线及错误说明，并支持刷新。",
+      "Do 为图标按钮提供可访问性标签，选中项提供选中语义，并遵守减少动态效果设置。"
+    ],
+    "donts": [
+      "Don't 恢复旧版设备下拉框或 360 点面板作为当前导航规范。",
+      "Don't 以固定蓝色或固定明暗色替换系统动态颜色。",
+      "Don't 增加装饰图片、额外字体、网页容器或自定义卡片投影。",
+      "Don't 按设备名称推断控制能力，也不要把所有设备读数标成室内温度。"
+    ]
+  },
+  "notCanonized": [
+    {
+      "item": "PRODUCT.md 仍是旧版自由格式，无新版产品 schema。",
+      "reason": "只报告；本次写入授权限 DESIGN.md 与 .impeccable/design.json。"
+    }
+  ]
+}

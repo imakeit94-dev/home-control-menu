@@ -1,0 +1,14 @@
+.build/
+.DS_Store
+dist/
+
+# Local Home Assistant inventories, screenshots, profiles, and performance traces
+# can contain private household information.
+.impeccable/backup-*/
+.impeccable/reference/
+.impeccable/review/
+.performance/
+Assets/DeviceGrid.png
+Assets/AirConditionerDetail.png
+*.xcuserstate
+xcuserdata/
